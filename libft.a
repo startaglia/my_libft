@@ -1,7 +1,0 @@
-!<arch>
-ft_memset.c/    0           0     0     644     60        `
-
-void ft_memset(void)
-{
-    printf("strindgda prova");
-}
