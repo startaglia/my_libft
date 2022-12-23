@@ -17,6 +17,7 @@ int main()
 /* ft_bzero */
     printf(FUNCTION("\n* ft_bzero\n\n"));
     ft_bzero();
+	printf("test");
     return(0);
 }
 // 	test_strlen_0();
