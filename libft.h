@@ -1,17 +1,19 @@
 #ifndef LIBFT_H
 #define LIBFT_H
 
-# include <unistd.h>
-# include <stdlib.h>
-# include <stdio.h>
-# include "ft_memset.c"
-# include "ft_bzero.c"
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 typedef struct	s_list
 {
 	void			*content;
 	struct s_list	*next;
-}				t_list;
+}
+			t_list;
+
+int	ft_strlen(char *str);
+void ft_memset(void);
 
 /*
 ** Part 1 - Libc functions

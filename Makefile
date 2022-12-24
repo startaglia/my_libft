@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-LIB1 = ar -rcs
+LIB1 = ar -rc
 LIB2 = ranlib
 RM = rm -f
 NAME = libft.a
@@ -10,11 +10,17 @@ OBJS = $(SRCS:.c=.o)
 
 all: $(OBJS) $(NAME)
 
+# questo mi compila i file e crea i .o
 $(OBJS): $(INCLUDE)
 
+# qui me li mette tutti nella libft.a
 $(NAME):	$(OBJS) $(INCLUDE)
 			$(LIB1) $(NAME) $(OBJS)
 			$(LIB2) $(NAME)
+			nm $(NAME)
+
+# il comando sotto compila l'eseguibile del main con la libft.a e lo esegue 
+# gcc -Wall -Werror -Wextra -I. -L. -lft main.c -o main && ./main
 
 # se non gli dai nessuna ricetta di default compila
 # questo comando all compila

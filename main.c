@@ -11,13 +11,17 @@ int main()
 
 /* Part 1 header */
 	printf(PARTS("================================== ∙ Part 1 ∙ ==================================\n"));
-/* ft_memset */
-	printf(FUNCTION("\n* ft_memset\n\n"));
-    ft_memset();
+/* ft_strlen*/
+	printf(FUNCTION("\n* ft_strlen\n"));
+    char *str = "stringa";
+    printf("ORIGINAL FUNCTION => %ld\n", strlen(str));
+    printf("MY FUNCTION => %d\n", ft_strlen(str));
+
+
 /* ft_bzero */
-    printf(FUNCTION("\n* ft_bzero\n\n"));
-    ft_bzero();
-	printf("test");
+    // printf(FUNCTION("\n* ft_bzero\n\n"));
+    // ft_bzero();
+	// printf("test");
     return(0);
 }
 // 	test_strlen_0();

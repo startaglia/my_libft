@@ -1,0 +1,22 @@
+// !•memset
+// !•bzero
+// !•memcpy
+// !•memccpy
+// !•memmove
+// !•memchr
+// !•memcmp
+// •strlen      L'ORIGINALE TORNA UN LD, LA MIA TORNA UN D. CAPIRE SE DEVO FAR TORNARE ANCHE IO UN LD
+// !•strlcpy
+// !•strlcat
+// !•strchr
+// !•strrchr
+// !•strnstr
+// !•strncmp
+// !•atoi
+// !•isalpha
+// !•isdigit
+// !•isalnum
+// !•isascii
+// !•isprint
+// !•toupper
+// !•tolower
