@@ -11,17 +11,31 @@ int main()
 
 /* Part 1 header */
 	printf(PARTS("================================== ∙ Part 1 ∙ ==================================\n"));
+
 /* ft_strlen*/
 	printf(FUNCTION("\n* ft_strlen\n"));
-    char *str = "stringa";
-    printf("ORIGINAL FUNCTION => %ld\n", strlen(str));
-    printf("MY FUNCTION => %d\n", ft_strlen(str));
+    char *str1 = "stringa";
+    printf("ORIGINAL FUNCTION => %ld\n", strlen(str1));
+    printf("MY FUNCTION => %d\n", ft_strlen(str1));
+
 /* ft_strlcpy*/
 	printf(FUNCTION("\n* ft_strlcpy\n"));
     char buffer[19];
-    printf("ORIGINAL FUNCTION => CANT FIND");
-    printf("MY FUNCTION => %d\n", ft_strlcpy(buffer,str,6));
+    printf("ORIGINAL FUNCTION => CANT FIND\n");
+    printf("MY FUNCTION => %d\n", ft_strlcpy(buffer,str1,6));
 
+/* ft_strlcat*/
+	printf(FUNCTION("\n* ft_strlcat\n"));
+    char first[] = "This is ";
+    char last[] = "a potentially long string";
+    printf("ORIGINAL FUNCTION => CANT FIND\n");
+    printf("MY FUNCTION => %d\n", ft_strlcat(first, last, 6));
+/* ft_strncmp*/
+	printf(FUNCTION("\n* ft_strncmp\n"));
+    char *str2 = "RFFffssasd";
+    char *str3 = "RFt";
+    printf("ORIGINAL FUNCTION => %d\n", strncmp(str2, str3, 3));
+    printf("MY FUNCTION => %d\n", ft_strncmp(str2, str3, 3));
 /* ft_bzero */
     // printf(FUNCTION("\n* ft_bzero\n\n"));
     // ft_bzero();

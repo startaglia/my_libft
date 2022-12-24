@@ -14,8 +14,9 @@ typedef struct	s_list
 			t_list;
 
 int	ft_strlen(char *str);
-void ft_memset(void);
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
+int	ft_strncmp(char *s1, char *s2, unsigned int n);
 
 /*
 ** Part 1 - Libc functions
