@@ -51,6 +51,24 @@ int main()
     printf("ORIGINAL FUNCTION => %d\n", isdigit(c));
     printf("MY FUNCTION => %d\n", ft_isdigit(c));
 
+/* ft_isallnum*/
+	printf(FUNCTION("\n* ft_isalnum\n"));
+    c = 53;
+    printf("ORIGINAL FUNCTION => %d\n", isalnum(c));
+    printf("MY FUNCTION => %d\n", ft_isalnum(c));
+
+/* ft_isascii*/
+	printf(FUNCTION("\n* ft_isascii\n"));
+    c = 56;
+    printf("ORIGINAL FUNCTION => %d\n", isascii(c));
+    printf("MY FUNCTION => %d\n", ft_isascii(c));
+
+    
+ 
+    
+
+
+
 
 
 
