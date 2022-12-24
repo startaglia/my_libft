@@ -30,12 +30,25 @@ int main()
     char last[] = "a potentially long string";
     printf("ORIGINAL FUNCTION => CANT FIND\n");
     printf("MY FUNCTION => %d\n", ft_strlcat(first, last, 6));
+
 /* ft_strncmp*/
 	printf(FUNCTION("\n* ft_strncmp\n"));
     char *str2 = "RFFffssasd";
     char *str3 = "RFt";
     printf("ORIGINAL FUNCTION => %d\n", strncmp(str2, str3, 3));
     printf("MY FUNCTION => %d\n", ft_strncmp(str2, str3, 3));
+
+/* ft_isalpha*/
+	printf(FUNCTION("\n* ft_isalpha\n"));
+    char c;
+    c = 'y';
+    printf("ORIGINAL FUNCTION => %d\n", isalpha(c));
+    printf("MY FUNCTION => %d\n", ft_isalpha(c));
+
+
+
+
+
 /* ft_bzero */
     // printf(FUNCTION("\n* ft_bzero\n\n"));
     // ft_bzero();

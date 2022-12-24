@@ -1,3 +1,4 @@
+// ?NORMINETTARE TUTTO
 // !•memset
 // !•bzero
 // !•memcpy
@@ -13,7 +14,7 @@
 // !•strnstr
 // •strncmp
 // !•atoi
-// !•isalpha
+// •isalpha     UN SITO DICEVA CHE DOVEVA TORNARE 1 O 2, MA LA FUNZIONE ORIG TESTANDOLA TORNA 1024 O 0 (IO L'HO FATTA PRENDENDO AD ESEMPIO IL TEST); VERIFICARE.
 // !•isdigit
 // !•isalnum
 // !•isascii
