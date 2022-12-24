@@ -8,9 +8,3 @@ int	ft_isalpha(int c)
     else
         return (0);
 }
-	// if (str[0] == 0)
-	// {
-	// 	return (1);
-	// }	
-	// return (1);
-// }

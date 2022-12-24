@@ -44,6 +44,12 @@ int main()
     c = 'y';
     printf("ORIGINAL FUNCTION => %d\n", isalpha(c));
     printf("MY FUNCTION => %d\n", ft_isalpha(c));
+    
+/* ft_isdigit*/
+	printf(FUNCTION("\n* ft_isdigit\n"));
+    c = '5';
+    printf("ORIGINAL FUNCTION => %d\n", isdigit(c));
+    printf("MY FUNCTION => %d\n", ft_isdigit(c));
 
 
 
