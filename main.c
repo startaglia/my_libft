@@ -63,6 +63,12 @@ int main()
     printf("ORIGINAL FUNCTION => %d\n", isascii(c));
     printf("MY FUNCTION => %d\n", ft_isascii(c));
 
+/* ft_isprint*/
+	printf(FUNCTION("\n* ft_isprint\n"));
+    c = 53;
+    printf("ORIGINAL FUNCTION => %d\n", isprint(c));
+    printf("MY FUNCTION => %d\n", ft_isprint(c));
+
     
  
     
