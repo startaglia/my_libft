@@ -16,7 +16,11 @@ int main()
     char *str = "stringa";
     printf("ORIGINAL FUNCTION => %ld\n", strlen(str));
     printf("MY FUNCTION => %d\n", ft_strlen(str));
-
+/* ft_strlcpy*/
+	printf(FUNCTION("\n* ft_strlcpy\n"));
+    char buffer[19];
+    printf("ORIGINAL FUNCTION => CANT FIND");
+    printf("MY FUNCTION => %d\n", ft_strlcpy(buffer,str,6));
 
 /* ft_bzero */
     // printf(FUNCTION("\n* ft_bzero\n\n"));

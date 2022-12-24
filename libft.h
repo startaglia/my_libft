@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 typedef struct	s_list
 {
@@ -14,6 +15,7 @@ typedef struct	s_list
 
 int	ft_strlen(char *str);
 void ft_memset(void);
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 
 /*
 ** Part 1 - Libc functions
