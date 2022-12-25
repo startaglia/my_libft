@@ -75,6 +75,13 @@ int main()
     printf("ORIGINAL FUNCTION => %c\n", tolower(c));
     printf("MY FUNCTION => %c\n", ft_tolower(c));
 
+/* ft_toupper*/
+	printf(FUNCTION("\n* ft_toupper\n"));
+    c = 112;
+    printf("ORIGINAL FUNCTION => %c\n", toupper(c));
+    printf("MY FUNCTION => %c\n", ft_toupper(c));
+
+
     
  
     
