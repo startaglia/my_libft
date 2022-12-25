@@ -69,6 +69,12 @@ int main()
     printf("ORIGINAL FUNCTION => %d\n", isprint(c));
     printf("MY FUNCTION => %d\n", ft_isprint(c));
 
+/* ft_tolower*/
+	printf(FUNCTION("\n* ft_tolower\n"));
+    c = 'G';
+    printf("ORIGINAL FUNCTION => %c\n", tolower(c));
+    printf("MY FUNCTION => %c\n", ft_tolower(c));
+
     
  
     
