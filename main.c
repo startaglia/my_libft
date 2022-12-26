@@ -87,6 +87,21 @@ int main()
     printf("ORIGINAL FUNCTION => %d\n", atoi(s));
     printf("MY FUNCTION => %d\n", ft_atoi(s));
 
+/* ft_strchr*/
+	printf(FUNCTION("\n* ft_strchr\n"));
+    s = "TERE";
+    printf("ORIGINAL FUNCTION => %s\n", strchr(s, 4));
+    printf("MY FUNCTION => %s\n", ft_strchr(s, 4));
+
+/* ft_strchr*/
+	printf(FUNCTION("\n* ft_strrchr\n"));
+    s = "";
+    printf("ORIGINAL FUNCTION => %s\n", strrchr(s, 0));
+    printf("MY FUNCTION => %s\n", ft_strrchr(s, 0));
+
+
+
+
 
     
  

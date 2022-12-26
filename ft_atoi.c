@@ -29,22 +29,6 @@ static int	whitespaces(char *str, int *ptr_i)
     }
 	*ptr_i = i;
 	return (count);
-    // printf("%c", str[i]);
-
-    // if(!(str[i] >= 48 && str[i] <= 57))
-    // {
-    //     i++;
-    //     *ptr_i = i;
-    // }
-
-    
-    // else
-    // {
-        // i++;
-        // *ptr_i = i;
-        // return(count);
-    // }
-    
 }
 
 int	ft_atoi(char *str)
@@ -55,10 +39,6 @@ int	ft_atoi(char *str)
 
 	result = 0;
 	sign = whitespaces(str, &i);
-    // if(!(str[i -1] >= 48 && str[i -1] <= 57))
-    // {
-    //     return(result);
-    // }
 	while (str[i] && str[i] >= 48 && str[i] <= 57)
 	{
 		result *= 10;
