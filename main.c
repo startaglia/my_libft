@@ -81,6 +81,12 @@ int main()
     printf("ORIGINAL FUNCTION => %c\n", toupper(c));
     printf("MY FUNCTION => %c\n", ft_toupper(c));
 
+/* ft_atoi*/
+	printf(FUNCTION("\n* ft_atoi\n"));
+    char *s = "6(6   546    5";
+    printf("ORIGINAL FUNCTION => %d\n", atoi(s));
+    printf("MY FUNCTION => %d\n", ft_atoi(s));
+
 
     
  
