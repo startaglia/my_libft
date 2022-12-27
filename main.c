@@ -21,14 +21,14 @@ int main()
 /* ft_strlcpy*/
 	printf(FUNCTION("\n* ft_strlcpy\n"));
     char buffer[19];
-    printf("ORIGINAL FUNCTION => CANT FIND\n");
+    printf("ORIGINAL FUNCTION => NOT FOUND\n");
     printf("MY FUNCTION => %d\n", ft_strlcpy(buffer,str1,6));
 
 /* ft_strlcat*/
 	printf(FUNCTION("\n* ft_strlcat\n"));
     char first[] = "This is ";
     char last[] = "a potentially long string";
-    printf("ORIGINAL FUNCTION => CANT FIND\n");
+    printf("ORIGINAL FUNCTION => NOT FOUND\n");
     printf("MY FUNCTION => %d\n", ft_strlcat(first, last, 6));
 
 /* ft_strncmp*/
@@ -44,7 +44,7 @@ int main()
     c = 'y';
     printf("ORIGINAL FUNCTION => %d\n", isalpha(c));
     printf("MY FUNCTION => %d\n", ft_isalpha(c));
-    
+
 /* ft_isdigit*/
 	printf(FUNCTION("\n* ft_isdigit\n"));
     c = '5';
@@ -99,13 +99,24 @@ int main()
     printf("ORIGINAL FUNCTION => %s\n", strrchr(s, 0));
     printf("MY FUNCTION => %s\n", ft_strrchr(s, 0));
 
+/* ft_strnstr*/
+	printf(FUNCTION("\n* ft_strnstr\n"));
+    const char *largestring = "bello cane   pico pico-- canzbellocane";
+	const char *smallstring = "bell";
+    printf("ORIGINAL FUNCTION => NOT FOUND\n");
+    // printf("REPO FUNCTION => %s\n", ft_strnstrww(largestring, smallstring, 4));
+    printf("MY FUNCTION => %s\n", ft_strnstr(largestring, smallstring, 4));
+
+    // printf("MY FUNCTION => %s\n", ft_strrchr(s, 0));
 
 
 
 
-    
- 
-    
+
+
+
+
+
 
 
 

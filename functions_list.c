@@ -1,4 +1,5 @@
 // ?NORMINETTARE TUTTO
+
 // !•memset
 // !•bzero
 // !•memcpy
@@ -11,7 +12,7 @@
 // •strlcat     LA FUNZIONE NON LA TROVO NELLE LIB, DOVREBBERE ESSERE STATA TOLTA.
 // •strchr      PROVARE A RIFARLA CON GIULIANO MA TORNANDO IL VALORE IN UNA PUNTATORE VARIABILE
 // •strrchr
-// !•strnstr
+// •strnstr
 // •strncmp
 // •atoi
 // •isalpha     IL MAN DICE CHE DEVE TORNARE UN NON-ZERO CHAR, IO STO TORNANDO I VALORI CHE TORNANO NEI TEST
