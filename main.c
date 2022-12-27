@@ -166,15 +166,22 @@ int main()
 /* ft_memcmp*/
 	printf(FUNCTION("\n* ft_memcmp\n"));    
     char utr[15] = "giovanepadwan";
-    char vtr[15] = "giovanepurte";
+    char vtr[15] = "giovanepadwan";
     int bk = memcmp(utr, vtr, 8);
     printf("ORIGINAL FUNCTION => %d\n", bk);
 
     char wtr[15] = "giovanepadwan";
-    char ztr[15] = "giovanepurte";
+    char ztr[15] = "giovanepadwan";
     int ck = ft_memcmp(wtr, ztr, 8);
     printf("MINE FUNCTION => %d\n", ck);
+
+/* ft_bzero*/
+	printf(FUNCTION("\n* ft_bzero\n"));
+    bzero(ztr +4, 2);
+    printf("ORIGINAL FUNCTION => %s\n", ztr);
     
+    bzero(wtr +4, 2);
+    printf("MINE FUNCTION => %s\n", wtr);
 //     char qtr[50] = "simone";
 //     char *ak = ft_memchr(qtr, 'i', 2);
 //     printf("MINE FUNCTION => %s\n", ak);
