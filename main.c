@@ -101,7 +101,7 @@ int main()
 
 /* ft_strnstr*/
 	printf(FUNCTION("\n* ft_strnstr\n"));
-    const char *largestring = "bello cane   pico pico-- canzbellocane";
+    const char *largestring = "bello cane   pico pico-- canobellocane";
 	const char *smallstring = "bell";
     printf("ORIGINAL FUNCTION => NOT FOUND\n");
     // printf("REPO FUNCTION => %s\n", ft_strnstrww(largestring, smallstring, 4));
@@ -116,6 +116,23 @@ int main()
     char ptr[50] = "42Roma is for pro developer.";
     ft_memset(ptr + 13, 70, 5*sizeof(char));
     printf("MY FUNCTION => %s\n", ptr);
+
+/* ft_memcpy*/
+	printf(FUNCTION("\n* ft_memcpy\n"));    
+    char atr[50] = "abcdefghilmnopqrstuvz";
+    char btr[50] = "abcdrete";
+    memcpy(atr, btr, 5);
+    printf("ORIGINAL FUNCTION => %s\n", atr);
+    
+    char ctr[50] = "abcdefghilmnopqrstuvz";
+    char dtr[50] = "abcdrete";
+    ft_memcpy(ctr, dtr, 5);
+    printf("MINE FUNCTION => %s\n", ctr);
+
+    
+    // char btr[50] = "42Roma is for pro developer.";
+    // ft_memset(ptr + 13, 70, 5*sizeof(char));
+    // printf("MY FUNCTION => %s\n", ptr);
 
 
 
