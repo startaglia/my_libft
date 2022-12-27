@@ -163,6 +163,31 @@ int main()
     char *ak = ft_memchr(qtr, 'i', 2);
     printf("MINE FUNCTION => %s\n", ak);
 
+/* ft_memcmp*/
+	printf(FUNCTION("\n* ft_memcmp\n"));    
+    char utr[15] = "giovanepadwan";
+    char vtr[15] = "giovanepurte";
+    int bk = memcmp(utr, vtr, 8);
+    printf("ORIGINAL FUNCTION => %d\n", bk);
+
+    char wtr[15] = "giovanepadwan";
+    char ztr[15] = "giovanepurte";
+    int ck = ft_memcmp(wtr, ztr, 8);
+    printf("MINE FUNCTION => %d\n", ck);
+    
+//     char qtr[50] = "simone";
+//     char *ak = ft_memchr(qtr, 'i', 2);
+//     printf("MINE FUNCTION => %s\n", ak);
+
+
+//    if(bk > 0) {
+//       printf("str2 is less than str1");
+//    } else if(bk < 0) {
+//       printf("str1 is less than str2");
+//    } else {
+//       printf("str1 is equal to str2");
+//    }
+
 
 
 
