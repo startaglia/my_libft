@@ -107,7 +107,15 @@ int main()
     // printf("REPO FUNCTION => %s\n", ft_strnstrww(largestring, smallstring, 4));
     printf("MY FUNCTION => %s\n", ft_strnstr(largestring, smallstring, 4));
 
-    // printf("MY FUNCTION => %s\n", ft_strrchr(s, 0));
+/* ft_memset*/
+	printf(FUNCTION("\n* ft_memset\n"));
+    char ftr[50] = "42Roma is for pro developer.";
+    memset(ftr + 13, 70, 5*sizeof(char));
+    printf("ORIGINAL FUNCTION => %s\n", ftr);
+    
+    char ptr[50] = "42Roma is for pro developer.";
+    ft_memset(ptr + 13, 70, 5*sizeof(char));
+    printf("MY FUNCTION => %s\n", ptr);
 
 
 

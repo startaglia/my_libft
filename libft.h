@@ -33,6 +33,7 @@ int				ft_atoi(char *str);
 char 			*ft_strchr(const char *s, int c);
 char 			*ft_strrchr(const char *s, int c);
 char			*ft_strnstr(const char *haystack, const char *needle, size_t len);
+void 			*ft_memset(void *s, int c, int n);
 
 
 
