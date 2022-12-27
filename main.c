@@ -119,15 +119,27 @@ int main()
 
 /* ft_memcpy*/
 	printf(FUNCTION("\n* ft_memcpy\n"));    
-    char atr[50] = "abcdefghilmnopqrstuvz";
+    char atr[50] = "";
     char btr[50] = "abcdrete";
     memcpy(atr, btr, 5);
     printf("ORIGINAL FUNCTION => %s\n", atr);
     
-    char ctr[50] = "abcdefghilmnopqrstuvz";
+    char ctr[50] = "";
     char dtr[50] = "abcdrete";
     ft_memcpy(ctr, dtr, 5);
     printf("MINE FUNCTION => %s\n", ctr);
+
+/* ft_memccpy*/
+	printf(FUNCTION("\n* ft_memccpy\n"));    
+    char etr[50] = "poco";
+    char itr[50] = "musone";
+    memccpy(etr, itr, 'l', 7);
+    printf("ORIGINAL FUNCTION => %s\n", etr);
+    
+    char gtr[50] = "poco";
+    char htr[50] = "musone";
+    ft_memccpy(gtr, htr, 'l', 7);
+    printf("MINE FUNCTION => %s\n", gtr);
 
     
     // char btr[50] = "42Roma is for pro developer.";
