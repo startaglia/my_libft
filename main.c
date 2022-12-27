@@ -141,10 +141,27 @@ int main()
     ft_memccpy(gtr, htr, 'l', 7);
     printf("MINE FUNCTION => %s\n", gtr);
 
+/* ft_memmove*/
+	printf(FUNCTION("\n* ft_memmove\n"));    
+    char ltr[50] = "tarta";
+    char mtr[50] = "tartaglia";
+    memmove(ltr + 1, mtr, 3);
+    printf("ORIGINAL FUNCTION => %s\n", ltr);
     
-    // char btr[50] = "42Roma is for pro developer.";
-    // ft_memset(ptr + 13, 70, 5*sizeof(char));
-    // printf("MY FUNCTION => %s\n", ptr);
+    char ntr[50] = "tarta";
+    char otr[50] = "tartaglia";
+    ft_memmove(ntr + 1, otr, 3);
+    printf("MINE FUNCTION => %s\n", ntr);
+
+/* ft_memchr*/
+	printf(FUNCTION("\n* ft_memchr\n"));    
+    char rtr[50] = "simone";
+    char *pk = memchr(rtr, 'i', 2);
+    printf("ORIGINAL FUNCTION => %s\n", pk);
+    
+    char qtr[50] = "simone";
+    char *ak = ft_memchr(qtr, 'i', 2);
+    printf("MINE FUNCTION => %s\n", ak);
 
 
 
