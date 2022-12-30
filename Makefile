@@ -5,7 +5,7 @@ CFLAGS = -Wall -Werror -Wextra
 RM = rm -f
 NAME = libft.a
 INCLUDE = libft.h
-SRCS = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c
+SRCS = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c
 OBJS = $(SRCS:.c=.o)
 
 all: $(OBJS) $(NAME)
@@ -20,7 +20,7 @@ $(NAME):	$(OBJS) $(INCLUDE)
 			nm $(NAME)
 
 # il comando sotto compila l'eseguibile del main con la libft.a e lo esegue 
-# gcc -Wall -Werror -Wextra -I. -L. -lft main.c -o main && ./main
+# gcc -Wall -Werror -Wextra -I. -L.  main.c -lft && ./a.out
 
 # se non gli dai nessuna ricetta di default compila
 # questo comando all compila

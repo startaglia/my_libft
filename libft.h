@@ -38,6 +38,7 @@ int 			ft_memcmp(const void *s1, const void *s2, size_t n);
 void 			ft_bzero(void *s, size_t n);
 int 			ft_tolower(int c);
 void 			*ft_calloc(size_t nmemb, size_t size);
+char 			*ft_strdup(const char *s);
 
 
 

@@ -193,6 +193,22 @@ int main()
 
     ptra = ft_calloc(2, 2);
     printf("MINE FUNCTION => %ld\n", sizeof(ptra));
+
+/* ft_strdup*/
+	printf(FUNCTION("\n* ft_strdup\n"));
+    char *aatr = "testString";
+    char *abtr;
+    abtr = strdup(aatr);
+    printf("ORIGINAL FUNCTION => %s\n", abtr);
+    
+    char *actr = "testString";
+    char *adtr;
+    adtr = ft_strdup(actr);
+    printf("MINE FUNCTION => %s\n", adtr);
+
+    // bzero(wtr +4, 2);
+    // printf("MINE FUNCTION => %s\n", wtr);
+
 //    if(bk > 0) {
 //       printf("str2 is less than str1");
 //    } else if(bk < 0) {
