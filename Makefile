@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-# LIB1 = ar -rc
-# LIB2 = ranlib
+LIB1 = ar -rc
+LIB2 = ranlib
 RM = rm -f
 NAME = libft.a
 INCLUDE = libft.h
@@ -19,6 +19,14 @@ $(NAME):	$(OBJS) $(INCLUDE)
 			$(LIB2) $(NAME)
 			nm $(NAME)
 
+clean:
+				$(RM) $(OBJS) $(BONUS_OBJS)
+
+fclean:			clean
+				$(RM) $(NAME)
+
+re:				fclean $(NAME)
+
 # il comando sotto compila l'eseguibile del main con la libft.a e lo esegue 
 # gcc -Wall -Werror -Wextra -I. -L.  main.c -lft && ./a.out
 
@@ -33,18 +41,9 @@ $(NAME):	$(OBJS) $(INCLUDE)
 # 			$(LIB1) $(NAME) $(OBJS)
 # 			$(LIB2) $(NAME)
 
-all:			$(NAME)
+# all:			$(NAME)
 
-# $(NAME):		$(OBJS)
-# 				ar rcs $(NAME) $(OBJS)
 
-clean:
-				$(RM) $(OBJS) $(BONUS_OBJS)
-
-fclean:			clean
-				$(RM) $(NAME)
-
-re:				fclean $(NAME)
 
 # clean:
 # 	@$(RM) $(OBJS)
