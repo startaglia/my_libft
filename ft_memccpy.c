@@ -1,11 +1,11 @@
 #include "libft.h"
 
-void *ft_memccpy(void *restrict dest, const void *restrict src,
-                     int c, int n)
+void *ft_memccpy(void *dest, const void *src,
+                     int c, size_t n)
 {
     if(!src)
         return(0);
-    int i;
+    size_t i;
 
     i = 0;
     while (i < n && *(unsigned char *)(dest + i - 1) != (unsigned char) c)
