@@ -206,6 +206,20 @@ int main()
     adtr = ft_strdup(actr);
     printf("MINE FUNCTION => %s\n", adtr);
 
+/* Part 2 header */
+	printf(PARTS("================================== ∙ Part 2 ∙ ==================================\n"));
+
+/* ft_substr*/
+	printf(FUNCTION("\n* ft_substr\n"));
+    char *aetr;
+    aetr = ft_substr(actr, 3, 3);
+    printf("MINE FUNCTION => %s\n", aetr);
+    // printf("ORIGINAL FUNCTION => %s\n", abtr);
+    
+    // char *actr = "testString";
+    // char *adtr;
+    // adtr = ft_strdup(actr);
+
     // bzero(wtr +4, 2);
     // printf("MINE FUNCTION => %s\n", wtr);
 
