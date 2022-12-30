@@ -112,59 +112,59 @@ int main()
     char ftr[50] = "42Roma is for pro developer.";
     memset(ftr + 13, 70, 5*sizeof(char));
     printf("ORIGINAL FUNCTION => %s\n", ftr);
-    
+
     char ptr[50] = "42Roma is for pro developer.";
     ft_memset(ptr + 13, 70, 5*sizeof(char));
     printf("MY FUNCTION => %s\n", ptr);
 
 /* ft_memcpy*/
-	printf(FUNCTION("\n* ft_memcpy\n"));    
+	printf(FUNCTION("\n* ft_memcpy\n"));
     char atr[50] = "";
     char btr[50] = "abcdrete";
     memcpy(atr, btr, 5);
     printf("ORIGINAL FUNCTION => %s\n", atr);
-    
+
     char ctr[50] = "";
     char dtr[50] = "abcdrete";
     ft_memcpy(ctr, dtr, 5);
     printf("MINE FUNCTION => %s\n", ctr);
 
 /* ft_memccpy*/
-	printf(FUNCTION("\n* ft_memccpy\n"));    
+	printf(FUNCTION("\n* ft_memccpy\n"));
     char etr[50] = "poco";
     char itr[50] = "musone";
     memccpy(etr, itr, 'l', 7);
     printf("ORIGINAL FUNCTION => %s\n", etr);
-    
+
     char gtr[50] = "poco";
     char htr[50] = "musone";
     ft_memccpy(gtr, htr, 'l', 7);
     printf("MINE FUNCTION => %s\n", gtr);
 
 /* ft_memmove*/
-	printf(FUNCTION("\n* ft_memmove\n"));    
+	printf(FUNCTION("\n* ft_memmove\n"));
     char ltr[50] = "tarta";
     char mtr[50] = "tartaglia";
     memmove(ltr + 1, mtr, 3);
     printf("ORIGINAL FUNCTION => %s\n", ltr);
-    
+
     char ntr[50] = "tarta";
     char otr[50] = "tartaglia";
     ft_memmove(ntr + 1, otr, 3);
     printf("MINE FUNCTION => %s\n", ntr);
 
 /* ft_memchr*/
-	printf(FUNCTION("\n* ft_memchr\n"));    
+	printf(FUNCTION("\n* ft_memchr\n"));
     char rtr[50] = "simone";
     char *pk = memchr(rtr, 'i', 2);
     printf("ORIGINAL FUNCTION => %s\n", pk);
-    
+
     char qtr[50] = "simone";
     char *ak = ft_memchr(qtr, 'i', 2);
     printf("MINE FUNCTION => %s\n", ak);
 
 /* ft_memcmp*/
-	printf(FUNCTION("\n* ft_memcmp\n"));    
+	printf(FUNCTION("\n* ft_memcmp\n"));
     char utr[15] = "giovanepadwan";
     char vtr[15] = "giovanepadwan";
     int bk = memcmp(utr, vtr, 8);
@@ -179,14 +179,20 @@ int main()
 	printf(FUNCTION("\n* ft_bzero\n"));
     bzero(ztr +4, 2);
     printf("ORIGINAL FUNCTION => %s\n", ztr);
-    
+
     bzero(wtr +4, 2);
     printf("MINE FUNCTION => %s\n", wtr);
-//     char qtr[50] = "simone";
-//     char *ak = ft_memchr(qtr, 'i', 2);
-//     printf("MINE FUNCTION => %s\n", ak);
 
+/* ft_calloc*/
+	printf(FUNCTION("\n* ft_calloc\n"));
+    int *btra;
 
+    btra = calloc(2, 2);
+    printf("ORIGINAL FUNCTION => %ld\n", sizeof(btra));
+    int *ptra;
+
+    ptra = ft_calloc(2, 2);
+    printf("MINE FUNCTION => %ld\n", sizeof(ptra));
 //    if(bk > 0) {
 //       printf("str2 is less than str1");
 //    } else if(bk < 0) {

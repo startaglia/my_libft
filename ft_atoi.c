@@ -1,5 +1,5 @@
-#include<stdio.h>
-
+// #include<stdio.h>
+#include "libft.h"
 static int	whitespaces(char *str, int *ptr_i)
 {
 	int	count;

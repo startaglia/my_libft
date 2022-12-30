@@ -39,7 +39,7 @@
 # define HEADER_L(string)	"\033[38;5;43m" string "\033[0m"
 # define HEADER_A(string)	"\033[1m\033[38;5;23m" string "\033[0m"
 # define PARTS(string)		"\033[38;5;13m" string "\033[0m"
-# define FUNCTION(string)	"\033[1m\033[38;5;75m" string "\033[0m"
+# define FUNCTION(string)	"\033[1m\033[38;5;166m" string "\033[0m"
 
 enum		e_values {
 	TEST_OK,
