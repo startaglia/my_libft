@@ -201,7 +201,7 @@ int main()
     abtr = strdup(aatr);
     printf("ORIGINAL FUNCTION => %s\n", abtr);
     
-    char *actr = "testString";
+    char *actr = "cane";
     char *adtr;
     adtr = ft_strdup(actr);
     printf("MINE FUNCTION => %s\n", adtr);
@@ -212,8 +212,15 @@ int main()
 /* ft_substr*/
 	printf(FUNCTION("\n* ft_substr\n"));
     char *aetr;
-    aetr = ft_substr(actr, 3, 3);
+    aetr = ft_substr(actr, 2, 2);
     printf("MINE FUNCTION => %s\n", aetr);
+
+/* ft_strjoin*/
+	printf(FUNCTION("\n* ft_strjoin\n"));
+    char *agtr = "pico";
+    char *aftr;
+    aftr = ft_strjoin(actr, agtr);
+    printf("MINE FUNCTION => %s\n", aftr);
     // printf("ORIGINAL FUNCTION => %s\n", abtr);
     
     // char *actr = "testString";
