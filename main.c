@@ -222,48 +222,14 @@ int main()
     aftr = ft_strjoin(actr, agtr);
     printf("MINE FUNCTION => %s\n", aftr);
 
+/* ft_strtrim*/
+	printf(FUNCTION("\n* ft_strtrim\n"));
+    char *tere = ft_strtrim("cittao", "bco");
+    printf("MINE FUNCTION => %s\n", tere);
+
 
 /* End footer */
 	printf(PARTS("\n\n================================= ∙ The End∙ ==================================\n"));
-
-
-
-    // printf("ORIGINAL FUNCTION => %s\n", abtr);
-    
-    // char *actr = "testString";
-    // char *adtr;
-    // adtr = ft_strdup(actr);
-
-    // bzero(wtr +4, 2);
-    // printf("MINE FUNCTION => %s\n", wtr);
-
-//    if(bk > 0) {
-//       printf("str2 is less than str1");
-//    } else if(bk < 0) {
-//       printf("str1 is less than str2");
-//    } else {
-//       printf("str1 is equal to str2");
-//    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ft_bzero */
-    // printf(FUNCTION("\n* ft_bzero\n\n"));
-    // ft_bzero();
-	// printf("test");
     return(0);
 }
 
