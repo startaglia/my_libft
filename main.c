@@ -227,6 +227,26 @@ int main()
     char *tere = ft_strtrim("cittao", "bco");
     printf("MINE FUNCTION => %s\n", tere);
 
+/* ft_split*/
+	printf(FUNCTION("\n* ft_split\n"));
+    char *pgere = "ciaoSamigoSpicoS";
+    char **pere = ft_splitt(pgere, 'S');
+    printf("EXAMPLE FUNCTION\n");
+    int i = 0;
+    while (pere[i])
+    {
+       printf("string %d: %s\n",i, pere[i]);
+       i++;
+    }
+    char **opere = ft_split(pgere, 'S');  
+    printf("MINE FUNCTION\n");
+    i = 0;
+    while (opere[i])
+    {
+       printf("string %d: %s\n",i, opere[i]);
+       i++;
+    }
+    
 
 /* End footer */
 	printf(PARTS("\n\n================================= ∙ The End∙ ==================================\n"));
