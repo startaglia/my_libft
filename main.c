@@ -246,6 +246,11 @@ int main()
        printf("string %d: %s\n",i, opere[i]);
        i++;
     }
+
+/* ft_itoa*/
+	printf(FUNCTION("\n* ft_itoa\n"));
+    char *yop = ft_itoa(456);
+    printf("MINE FUNCTION => %s\n", yop);
     
 
 /* End footer */

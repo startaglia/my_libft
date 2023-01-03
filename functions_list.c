@@ -32,8 +32,8 @@
 // • ft_substr  CAPIRE SE POSSO MODIFICARE UN ARGOMENTO DI FUNZIONE(START) O DEVO UTILIZZARE UN CONT;
 // • ft_strjoin         
 // • ft_strtrim
-// • ft_split   RIFARLA ORDINATA CON GIULIANOS
-// !• ft_itoa
+// • ft_split   RIFARLA ORDINATA CON GIULIANO (CAPIRE DOVE USARE FREE)
+// • ft_itoa    RIFARLA CON GIU
 // !• ft_strmapi 
 // !• ft_putchar_fd
 // !• ft_putstr_fd
