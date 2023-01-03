@@ -251,6 +251,11 @@ int main()
 	printf(FUNCTION("\n* ft_itoa\n"));
     char *yop = ft_itoa(456);
     printf("MINE FUNCTION => %s\n", yop);
+
+/* ft_strmapi*/
+	// printf(FUNCTION("\n* ft_itoa\n"));
+    // char *yop = ft_itoa(456);
+    // printf("MINE FUNCTION => %s\n", yop);
     
 
 /* End footer */

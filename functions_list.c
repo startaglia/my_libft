@@ -34,7 +34,7 @@
 // • ft_strtrim
 // • ft_split   RIFARLA ORDINATA CON GIULIANO (CAPIRE DOVE USARE FREE)
 // • ft_itoa    RIFARLA CON GIU
-// !• ft_strmapi 
+// • ft_strmapi     TESTARLA 
 // !• ft_putchar_fd
 // !• ft_putstr_fd
 // !• ft_putendl_fd
