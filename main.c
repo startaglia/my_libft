@@ -256,6 +256,16 @@ int main()
 	// printf(FUNCTION("\n* ft_itoa\n"));
     // char *yop = ft_itoa(456);
     // printf("MINE FUNCTION => %s\n", yop);
+
+/* ft_putchar_fd*/
+	// printf(FUNCTION("\n* ft_putchar_fd\n"));
+    // char *yop = ft_itoa(456);
+    // printf("MINE FUNCTION => %s\n", yop);
+
+/* ft_putstr_fd*/
+	// printf(FUNCTION("\n* ft_itoa\n"));
+    // char *yop = ft_itoa(456);
+    // printf("MINE FUNCTION => %s\n", yop);
     
 
 /* End footer */
