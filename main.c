@@ -253,19 +253,30 @@ int main()
     printf("MINE FUNCTION => %s\n", yop);
 
 /* ft_strmapi*/
-	// printf(FUNCTION("\n* ft_itoa\n"));
-    // char *yop = ft_itoa(456);
+	// printf(FUNCTION("\n* ft_strmapi\n"));
+    // char *yup = ft_strmapi(yup, char (*f)(unsigned
+    // int, char));
     // printf("MINE FUNCTION => %s\n", yop);
 
 /* ft_putchar_fd*/
-	// printf(FUNCTION("\n* ft_putchar_fd\n"));
-    // char *yop = ft_itoa(456);
-    // printf("MINE FUNCTION => %s\n", yop);
+	printf(FUNCTION("\n* ft_putchar_fd\n"));
+    printf("MINE FUNCTION\n");
+    ft_putchar_fd(52, 1);
 
 /* ft_putstr_fd*/
-	// printf(FUNCTION("\n* ft_itoa\n"));
-    // char *yop = ft_itoa(456);
-    // printf("MINE FUNCTION => %s\n", yop);
+	printf(FUNCTION("\n\n* ft_putstr_fd\n"));
+    printf("MINE FUNCTION\n");
+    ft_putstr_fd("c", 1);
+
+/* ft_putstr_fd*/
+	printf(FUNCTION("\n\n* ft_putendl_fd\n"));
+    printf("MINE FUNCTION\n");
+    ft_putendl_fd("c", 1);
+
+/* ft_putnbr_fd*/
+	printf(FUNCTION("\n* ft_nbr\n"));
+    printf("MINE FUNCTION\n");
+    ft_putnbr_fd(-1234, 1);
     
 
 /* End footer */
