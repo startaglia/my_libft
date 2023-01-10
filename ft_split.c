@@ -51,7 +51,6 @@ int count_strings(char const *s, char c)
 char **ft_split(char const *s, char c)
 {
     char **res;
-    int strings;
     int i;  //  iteratore su tutta la stringa
     int j;  //  contatore delle stringhe risultanti
     int f;  //  flag di dove si trova l'inzio della stringa successiva per la func len_string
@@ -60,11 +59,10 @@ char **ft_split(char const *s, char c)
     j = 0;
     i = 0;
     f = 0;
-    strings = count_strings(s, c);
-    res = (char **) malloc (sizeof(s) * (strings + 1));
+    res = (char **) malloc (sizeof(s) * (count_strings(s, c) + 1));
     while (s[i])
     {
-        if(s[i] == c)
+        if(s[i] == c && s[i + 1] != c)
         {
             k = f;
             res[j] = alloc_mem(s, c, f, k);

@@ -32,23 +32,23 @@
 // • ft_substr  CAPIRE SE POSSO MODIFICARE UN ARGOMENTO DI FUNZIONE(START) O DEVO UTILIZZARE UN CONT;
 // • ft_strjoin         
 // • ft_strtrim
-// • ft_split   RIFARLA ORDINATA CON GIULIANO (CAPIRE DOVE USARE FREE)
+// • ft_split   RIFARLA ORDINATA CON GIULIANO (CAPIRE DOVE USARE FREE)(CAPIRE COME FARLA CON LE STRUCT)
 // • ft_itoa    RIFARLA CON GIU
 // • ft_strmapi     TESTARLA 
-// !• ft_putchar_fd
-// !• ft_putstr_fd
-// !• ft_putendl_fd
-// !• ft_putnbr_fd
+// • ft_putchar_fd
+// • ft_putstr_fd
+// • ft_putendl_fd
+// • ft_putnbr_fd 
 
 // * ||--------------------------------------------------------------------------------||
 // * ||                                   BONUS PART                                   ||
 // * ||--------------------------------------------------------------------------------||
 
-// !• ft_lstnew
-// !• ft_lstadd_front     
-// !• ft_lstsize     
-// !• ft_lstlast
-// !• ft_lstadd_back
+// • ft_lstnew
+// • ft_lstadd_front     
+// • ft_lstsize     
+// • ft_lstlast
+// • ft_lstadd_back
 // !• ft_lstdelone 
 // !• ft_lstclear
 // !• ft_lstiter

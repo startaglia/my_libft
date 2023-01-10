@@ -26,10 +26,10 @@ int main()
 
 /* ft_strlcat*/
 	printf(FUNCTION("\n* ft_strlcat\n"));
-    char first[] = "This is ";
+    char first[] = "This";
     char last[] = "a potentially long string";
     printf("ORIGINAL FUNCTION => NOT FOUND\n");
-    printf("MY FUNCTION => %d\n", ft_strlcat(first, last, 6));
+    printf("MY FUNCTION => %d\n", ft_strlcat(first, last, 9));
 
 /* ft_strncmp*/
 	printf(FUNCTION("\n* ft_strncmp\n"));
@@ -53,9 +53,9 @@ int main()
 
 /* ft_isallnum*/
 	printf(FUNCTION("\n* ft_isalnum\n"));
-    c = 53;
-    printf("ORIGINAL FUNCTION => %d\n", isalnum(c));
-    printf("MY FUNCTION => %d\n", ft_isalnum(c));
+    c = 40;
+    printf("ORIGINAL FUNCTION => %c\n", isalnum(c));
+    printf("MY FUNCTION => %c\n", ft_isalnum(c));
 
 /* ft_isascii*/
 	printf(FUNCTION("\n* ft_isascii\n"));
@@ -83,7 +83,7 @@ int main()
 
 /* ft_atoi*/
 	printf(FUNCTION("\n* ft_atoi\n"));
-    char *s = "6(6   546    5";
+    char *s = "-2147483648";
     printf("ORIGINAL FUNCTION => %d\n", atoi(s));
     printf("MY FUNCTION => %d\n", ft_atoi(s));
 
@@ -143,14 +143,14 @@ int main()
 
 /* ft_memmove*/
 	printf(FUNCTION("\n* ft_memmove\n"));
-    char ltr[50] = "tarta";
-    char mtr[50] = "tartaglia";
-    memmove(ltr + 1, mtr, 3);
+    char ltr[50] = "hello boy";
+    char mtr[50] = "";
+    memmove(ltr, mtr, 3);
     printf("ORIGINAL FUNCTION => %s\n", ltr);
 
-    char ntr[50] = "tarta";
-    char otr[50] = "tartaglia";
-    ft_memmove(ntr + 1, otr, 3);
+    char ntr[50] = "hello boy";
+    char otr[50] = "";
+    ft_memmove(ntr, otr, 3);
     printf("MINE FUNCTION => %s\n", ntr);
 
 /* ft_memchr*/
@@ -229,7 +229,7 @@ int main()
 
 /* ft_split*/
 	printf(FUNCTION("\n* ft_split\n"));
-    char *pgere = "ciaoSamigoSpicoS";
+    char *pgere = "ciaoSSSamigoSpicoS";
     char **pere = ft_splitt(pgere, 'S');
     printf("EXAMPLE FUNCTION\n");
     int i = 0;
@@ -249,7 +249,7 @@ int main()
 
 /* ft_itoa*/
 	printf(FUNCTION("\n* ft_itoa\n"));
-    char *yop = ft_itoa(456);
+    char *yop = ft_itoa(-2147483648);
     printf("MINE FUNCTION => %s\n", yop);
 
 /* ft_strmapi*/
@@ -274,9 +274,9 @@ int main()
     ft_putendl_fd("c", 1);
 
 /* ft_putnbr_fd*/
-	printf(FUNCTION("\n* ft_nbr\n"));
+	printf(FUNCTION("\n* ft_putnbr\n"));
     printf("MINE FUNCTION\n");
-    ft_putnbr_fd(-1234, 1);
+    ft_putnbr_fd(2147483647, 1);
     
 
 /* End footer */

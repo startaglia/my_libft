@@ -1,44 +1,32 @@
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+static int
+	ft_abs(int nbr)
 {
-    char str[13];
-    int i;
-    int nbr;
+	return ((nbr < 0) ? -nbr : nbr);
+}
 
-    nbr = n;
-    i = 0;
-    if(n < 9 && n >= 0)
-    {
-        int nb;
-        nb = n + 48;
-        write(fd, &nb, 1);
-    }
-    else
-    {
-        ft_bzero(str, 13);
-        if(n < 0)
-        {
-            str[0] = '-';
-            n = -n;
-            i++;
-        }
-        while (n != 0)
-        {
-            str[i ++] = (n % 10) + 48;
-            n /= 10;
-        }
-        i--;
-        if(nbr < 0)
-        {
-            write(1, &str[0], 1);
-            while (i > 0)
-                write(fd, &str[i--], 1);
-        }
-        else
-        {
-            while (i >= 0)
-                write(fd, &str[i--], 1); 
-        }
-    }
+void
+	ft_putnbr_fd(int n, int fd)
+{
+	char	str[13];
+	int		is_neg;
+	int		length;
+
+	is_neg = (n < 0);
+	ft_bzero(str, 13);
+	if (n == 0)
+		str[0] = '0';
+	length = 0;
+	while (n != 0)
+	{
+		str[length++] = '0' + ft_abs(n % 10);
+		n = (n / 10);
+	}
+	if (is_neg)
+		str[length] = '-';
+	else if (length > 0)
+		length--;
+	while (length >= 0)
+		write(fd, &str[length--], 1);
 }

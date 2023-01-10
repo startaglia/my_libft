@@ -17,31 +17,33 @@ char *ft_itoa(int n)
 {
     int len;
     char *res;
+    long nb;
 
+    nb = n;
     len = check_nb(n);
-    if(n < 0)
+    if(nb < 0)
     {
         res = (char *) malloc(sizeof(res) * (len) + 2);
         if(!res)
             return(NULL);
-		n = -n;
+		nb = -nb;
         res[0] = '-';
         while (1 <= len)
         {
-            res[len] = n % 10 + 48;
-            n /= 10;
+            res[len] = nb % 10 + 48;
+            nb /= 10;
             len --;
         }
     }
-    else if(n > 0)
+    else if(nb > 0)
     {
         res = (char *) malloc(sizeof(res) * (len));
         if(!res)
             return(NULL);
         while (0 < len)
         {
-            res[len - 1] = n % 10 + 48;
-            n /= 10;
+            res[len - 1] = nb % 10 + 48;
+            nb /= 10;
             len--;
         }
     }
